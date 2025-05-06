@@ -1,0 +1,24 @@
+
+---
+
+### `remoteclip_multiscale_fusion/environment.yml`
+```yaml
+name: remoteclip-fusion
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.2
+  - torchvision
+  - cudatoolkit=11.8
+  - pip
+  - pip:
+      - open_clip_torch==2.23
+      - datasets
+      - kagglehub
+      - torchgeo
+      - albumentations
+      - tqdm
+      - matplotlib
+      - pillow
